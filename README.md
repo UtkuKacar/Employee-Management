@@ -78,9 +78,6 @@ Submit a pull request.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Contact
 If you have any questions or feedback, feel free to reach out:
 
