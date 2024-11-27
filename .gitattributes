@@ -1,0 +1,14 @@
+# Varsayılan olarak satır sonlarını platforma göre otomatik ayarla
+* text=auto
+
+# Özellikle Windows'a özgü dosyalar
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Özellikle Linux/MacOS için
+*.sh text eol=lf
+
+# İkili dosyalar (satır sonu değişikliklerinden etkilenmez)
+*.png binary
+*.jpg binary
+*.gif binary

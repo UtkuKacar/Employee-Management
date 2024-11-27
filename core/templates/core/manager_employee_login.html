@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap</title>
+    <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <!-- Form container -->
+    <div class="login-container">
+        <h1 class="login-title">Giriş Yap</h1>
+        <form method="post" class="login-form">
+            {% csrf_token %}
+            <!-- Kullanıcı adı -->
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <!-- Şifre -->
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <!-- Giriş yap butonu -->
+            <button type="submit" class="login-button">Giriş Yap</button>
+        </form>
+    </div>
+</body>
+</html>

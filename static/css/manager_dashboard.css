@@ -1,0 +1,110 @@
+/* Genel ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+}
+
+/* Ana konteyner */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Başlık */
+.title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Çıkış yap butonu */
+.logout-button {
+    float: right;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+
+
+/* Tablolar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+/* Onaylama ve reddetme butonları */
+.approve-button, .reject-button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.approve-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+.reject-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+
+/* Yeni izin tanımla butonu */
+.add-leave-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.add-leave-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}

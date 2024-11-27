@@ -1,0 +1,95 @@
+/* Genel arka plan */
+body {
+    background: linear-gradient(to bottom, #cfd9df, #e2ebf0); /* Gradient renk */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Giriş kutusu */
+.login-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Başlık */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form grubu */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover ve focus */
+.form-group input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+    outline: none;
+}
+
+/* Giriş butonu */
+.login-button {
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.2);
+    background-color: #357ABD;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
+    .login-button {
+        font-size: 14px;
+    }
+}

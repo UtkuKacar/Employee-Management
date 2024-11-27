@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  postgres_db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1806
+      POSTGRES_DB: attendance_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis_server:
+    image: redis:7.4.1
+    container_name: redis_server
+    ports:
+      - "6379:6379"
+
+  django_app:
+    build:
+      context: .
+    container_name: django_app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_db
+      - redis_server
+    environment:
+      - DATABASE_HOST=postgres_db
+volumes:
+  postgres_data:
